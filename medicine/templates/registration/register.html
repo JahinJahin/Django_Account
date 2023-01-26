@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+    </head>
+<body>
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+      <center>  <h3 style="margin-top:2rpm;"">Create New Account</h3></center>
+    
+    <div class="container " style="margin-top: 30px; ">
+    <form action="" method="POST">
+      {% csrf_token %}
+      <fieldset class="form-group">
+          <legend class="border-bottom mb-4" style="color: white;">Login Now</legend>
+          {{ form|crispy }}
+      </fieldset>
+      <div class="form-group" id="signup-button">
+          <button class="btn " style="color: white; background-color: #00FF00;"<a href="{% url 'login'%}">signup</a></button>
+
+      </div>
+      
+    </form>
+
+    </div>
+    
+{% endblock %}
+</body>
+</html>

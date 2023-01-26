@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Profile</title>
+</head>
+<body style="background-image: url(https://thumbs.dreamstime.com/b/medical-logo-14037435.jpg);  background-repeat: no-repeat;background-size: cover;background-position: top;">
+{% load crispy_forms_tags %}
+   <div style="margin-top: 3rem;">
+  <center><h1 class="card" style="font-family: serif; font-weight: bolder;color: rgb(32, 29, 36);">WELCOME TO MY PAGE</h1><br/><br/>
+
+     <div class="card" style="width: 40rem;background-color: rgb(95, 206, 240);">
+    
+       <h5 style="font-family: serif; font-size: x-large;font-weight: 900;"> Enter The Home Page To Click The Home Button</h5>        
+                
+     <span> <button class=" btn btn-outline-success">  <a class="nav-link" href="{% url 'home'%}">Home</a></button></span>
+    
+                     </center>  </div></div>
+                 
+</body>
+</html>
